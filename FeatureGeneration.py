@@ -19,12 +19,7 @@ from sklearn.metrics import mean_squared_error
 import h5py
 import os
 
-df=pd.read_csv('ILINet.csv')
-weeks=df['WEEK']
-weeks=weeks.values.reshape((730,10))
-weeks=weeks[:579,0]
-c1=np.genfromtxt('correlate1.csv',delimiter=',')
-test_list=[]
+
 
 DATA_DIR = '../Data'
 
